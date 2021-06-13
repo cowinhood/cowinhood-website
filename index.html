@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Alerts</title>
+    <script src="https://use.fontawesome.com/6a1b69f900.js"></script>
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+
+    <!-- CSS Reset -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <style>
+      .parent {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        margin: 100px auto;
+      }
+      .parent .button-large {
+        font-size: 1.4rem;
+        height: 6.8rem;
+        padding: 0.5rem 3rem;
+      }
+      .parent .custom-header h1 {
+        text-align: center;
+      }
+      .parent .btn-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+      .parent .container {
+        width: 400px;
+        background-color: #f1f4ffff;
+        padding: 25px 20px;
+        border-radius: 8px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(0, 0, 0, 0.125);
+      }
+
+      .parent .container .btn-container button i {
+        vertical-align: middle;
+      }
+    </style>
+    <script>
+      function onFormSubmit(event) {
+        event.preventDefault();
+        console.log(
+          "form submitted",
+          document.querySelector("#cityListField").value
+        );
+      }
+    </script>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="container">
+        <div class="custom-header">
+          <h1>Telegram Alerts</h1>
+        </div>
+        <div>
+          <form onSubmit="onFormSubmit(event)">
+            <fieldset>
+              <label for="cityListField">Cities</label>
+              <select id="cityListField">
+                <option value="blr group telegram link">Bengaluru</option>
+                <option value="chennai group telegram link">Chennai</option>
+                <option value="Delhi group telegram link">Delhi</option>
+              </select>
+              <div class="btn-container">
+                <button
+                  type="submit"
+                  class="button button-outline button-large"
+                >
+                  <i class="fa fa-telegram fa-4x" aria-hidden="true"></i>
+                  <span>JOIN</span>
+                </button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
