@@ -6,9 +6,12 @@ import { createStyles, useTheme } from "@material-ui/core/styles";
 import Autocomplete from "@material-ui/lab/Autocomplete";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import Link from "@material-ui/core/Link";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import TextField from "@material-ui/core/TextField";
 import { Theme } from "@material-ui/core";
+import TwitterIcon from "@material-ui/icons/Twitter";
 import Typography from "@material-ui/core/Typography";
 import data from "./data.json";
 import logo from "./logo.png";
@@ -108,7 +111,35 @@ function App() {
       {/* Site Body END*/}
 
       {/* Site Footer START*/}
-      <Box></Box>
+      <Box position="absolute" bottom={theme.spacing(0.5)} left="0" right="0">
+        <Box display="flex" alignItems="center" justifyContent="center">
+          <Box marginRight={theme.spacing(0.1)}>
+            <Link
+              href="https://github.com/cowinhood/cowinhood.github.io"
+              color="inherit"
+              target="_blank"
+              rel="noopener"
+            >
+              <GitHubIcon />
+            </Link>
+          </Box>
+          {" | "}
+          <Box marginRight={theme.spacing(0.1)} marginLeft={theme.spacing(0.1)}>
+            <Link
+              href="https://twitter.com/cowinhood"
+              color="inherit"
+              target="_blank"
+              rel="noopener"
+            >
+              <TwitterIcon />
+            </Link>
+          </Box>
+          {" | "}
+          <Box marginLeft={theme.spacing(0.1)}>
+            Cowinhood {new Date().getFullYear()}
+          </Box>
+        </Box>
+      </Box>
       {/* Site Footer END*/}
     </div>
   );

@@ -2,23 +2,23 @@
   "telegram_bots": [
     {
       "name": "All Metros",
-      "chat_id": "@cowinhood_metros"
+      "chat_id": "cowinhood_metros"
     },
     {
       "name": "Bengaluru",
-      "chat_id": "@cowinhood_blr_u45"
+      "chat_id": "cowinhood_blr_u45"
     },
     {
       "name": "Hyderabad",
-      "chat_id": "@cowinhood_hyd_u45"
+      "chat_id": "cowinhood_hyd_u45"
     },
     {
       "name": "Gurugram",
-      "chat_id": "@cowinhood_ggn_u45"
+      "chat_id": "cowinhood_ggn_u45"
     },
     {
       "name": "Mumbai",
-      "chat_id": "@cowinhood_mum_u45"
+      "chat_id": "cowinhood_mum_u45"
     }
   ]
 }
