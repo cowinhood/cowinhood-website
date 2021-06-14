@@ -29,7 +29,7 @@ const Share: React.FC = () => {
       </Box>
       <Box display="flex" alignItems="center" justifyContent="center">
         <Box paddingRight={theme.spacing(0.2)}>
-          <WhatsappShareButton url={shareUrl}>
+          <WhatsappShareButton url={shareUrl} title={title}>
             <WhatsappIcon size={32} round />
           </WhatsappShareButton>
         </Box>
@@ -39,17 +39,17 @@ const Share: React.FC = () => {
           </FacebookShareButton>
         </Box>
         <Box paddingRight={theme.spacing(0.2)}>
-          <TwitterShareButton url={shareUrl}>
+          <TwitterShareButton title={title} url={shareUrl}>
             <TwitterIcon size={32} round />
           </TwitterShareButton>
         </Box>
         <Box paddingRight={theme.spacing(0.2)}>
-          <LinkedinShareButton url={shareUrl}>
+          <LinkedinShareButton url={shareUrl} title={title}>
             <LinkedinIcon size={32} round />
           </LinkedinShareButton>
         </Box>
         <Box paddingRight={theme.spacing(0.2)}>
-          <TelegramShareButton url={shareUrl}>
+          <TelegramShareButton url={shareUrl} title={title}>
             <TelegramIcon size={32} round />
           </TelegramShareButton>
         </Box>
