@@ -42,13 +42,24 @@ const App: React.FC = () => {
       >
         <AlertForm />
       </Box>
-      <Box display="flex" alignItems="center" justifyContent="center">
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        marginBottom="-50px"
+      >
         <Share />
       </Box>
       {/* Site Body END*/}
 
       {/* Site Footer START*/}
-      <Box position="absolute" bottom={theme.spacing(0.5)} left="0" right="0">
+      <Box
+        position="absolute"
+        bottom={theme.spacing(0.5)}
+        height="25px"
+        left="0"
+        right="0"
+      >
         <Footer />
       </Box>
       {/* Site Footer END*/}
