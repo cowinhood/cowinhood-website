@@ -16,7 +16,7 @@ import React from "react";
 import Typography from "@material-ui/core/Typography";
 
 const Share: React.FC = () => {
-  const shareUrl = "http://cowinhood.org";
+  const shareUrl = "https://cowinhood.org";
   const title = "Cowinhood - Telegram Alerts for vaccination slot booking";
   const theme = useTheme();
 
