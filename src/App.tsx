@@ -38,7 +38,7 @@ const App: React.FC = () => {
         display="flex"
         alignItems="center"
         justifyContent="center"
-        marginBottom={theme.spacing(1.2)}
+        marginBottom={theme.spacing(0.2)}
       >
         <AlertForm />
       </Box>
