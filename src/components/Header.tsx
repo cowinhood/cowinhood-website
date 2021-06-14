@@ -10,9 +10,9 @@ const Header: React.FC = () => {
   return (
     <>
       <Box marginRight={theme.spacing(0.2)}>
-        <img height="100px" width="100px" src={logo} alt="Cowinhood logo" />
+        <img height="50px" width="50px" src={logo} alt="Cowinhood logo" />
       </Box>
-      <Typography variant="h3">Cowinhood</Typography>
+      <Typography variant="h4">Cowinhood</Typography>
     </>
   );
 };

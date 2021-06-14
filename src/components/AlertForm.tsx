@@ -14,7 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     button: {
-      margin: theme.spacing(1),
+      margin: theme.spacing(0.5),
     },
   })
 );
@@ -32,11 +32,11 @@ const AlertForm: React.FC = () => {
       flexDirection="column"
       boxShadow={theme.shadows[1]}
       bgcolor={theme.palette.primary.contrastText}
-      padding={theme.spacing(0.5)}
+      padding={theme.spacing(0.25)}
       borderRadius={8}
     >
-      <Box marginBottom={theme.spacing(0.5)}>
-        <Typography variant="h4">Telegram Alerts</Typography>
+      <Box marginBottom={theme.spacing(0.25)}>
+        <Typography variant="h5">Telegram Alerts</Typography>
         <Typography variant="subtitle1">(Age group: 18-44)</Typography>
       </Box>
       <Box>
@@ -46,7 +46,7 @@ const AlertForm: React.FC = () => {
             window.open(`https://t.me/${selectedGroup}`, "_blank"); //to open new page
           }}
         >
-          <Box marginBottom={theme.spacing(0.5)}>
+          <Box marginBottom={theme.spacing(0.25)}>
             <Autocomplete
               id="search-cities"
               options={data.telegram_bots}
