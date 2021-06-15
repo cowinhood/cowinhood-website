@@ -13,7 +13,6 @@ import {
 } from "react-share";
 
 import React from "react";
-import Typography from "@material-ui/core/Typography";
 
 const Share: React.FC = () => {
   const shareUrl = "https://cowinhood.org";
@@ -22,11 +21,6 @@ const Share: React.FC = () => {
 
   return (
     <Box>
-      <Box display="flex" alignItems="center" justifyContent="center">
-        <Typography variant="subtitle2" gutterBottom>
-          Share this website
-        </Typography>
-      </Box>
       <Box display="flex" alignItems="center" justifyContent="center">
         <Box paddingRight={theme.spacing(0.2)}>
           <WhatsappShareButton url={shareUrl} title={title}>

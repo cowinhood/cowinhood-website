@@ -43,7 +43,7 @@ const AlertForm: React.FC = () => {
     >
       <Box marginBottom={theme.spacing(0.25)}>
         <Typography variant="h5">Telegram Alerts</Typography>
-        <Typography variant="caption">(Age group: 18-44)</Typography>
+        <Typography variant="caption">(18-44)</Typography>
       </Box>
       <Box>
         <form
@@ -77,7 +77,7 @@ const AlertForm: React.FC = () => {
             disabled={!selectedGroup.channel_name}
             type="submit"
           >
-            Join {selectedGroup.channel_name}
+            {selectedGroup.channel_name}
           </Button>
         </form>
       </Box>
