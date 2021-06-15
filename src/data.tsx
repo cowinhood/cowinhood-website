@@ -1,13 +1,13 @@
-import assembly from "./icons/png-64/assembly.png";
-import bara from "./icons/png-64/bara.png";
-import charminar from "./icons/png-64/charminar.png";
-import chennai from "./icons/png-64/chennai.png";
-import gatewayofindia from "./icons/png-64/gatewayofindia.png";
-import hawamahal from "./icons/png-64/hawamahal.png";
-import jhultaminar from "./icons/png-64/jhultaminar.png";
-import kerala from "./icons/png-64/kerala.png";
-import tajmahal from "./icons/png-64/tajmahal.png";
-import victoria from "./icons/png-64/victoria.png";
+import assembly from "./assets/icons/svg/assembly.svg";
+import bara from "./assets/icons/svg/bara.svg";
+import charminar from "./assets/icons/svg/charminar.svg";
+import chennai from "./assets/icons/svg/chennai.svg";
+import gatewayofindia from "./assets/icons/svg/gatewayofindia.svg";
+import hawamahal from "./assets/icons/svg/hawamahal.svg";
+import jhultaminar from "./assets/icons/svg/jhultaminar.svg";
+import kerala from "./assets/icons/svg/kerala.svg";
+import tajmahal from "./assets/icons/svg/tajmahal.svg";
+import victoria from "./assets/icons/svg/victoria.svg";
 
 interface Data {
   name: string;
