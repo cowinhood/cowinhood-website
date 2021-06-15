@@ -1,6 +1,6 @@
 import "./App.scss";
 
-import AlertForm from "./components/AlertForm";
+import AlertGridForm from "./components/AlertGridForm";
 import Box from "@material-ui/core/Box";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -27,7 +27,7 @@ const App: React.FC = () => {
         alignItems="center"
         justifyContent="center"
         paddingY={theme.spacing(0.2)}
-        marginBottom={theme.spacing(1)}
+        marginBottom={theme.spacing(0.5)}
       >
         <Header />
       </Box>
@@ -40,26 +40,20 @@ const App: React.FC = () => {
         justifyContent="center"
         marginBottom={theme.spacing(0.2)}
       >
-        <AlertForm />
+        <AlertGridForm />
       </Box>
       <Box
         display="flex"
         alignItems="center"
         justifyContent="center"
-        marginBottom="-50px"
+        marginBottom={theme.spacing(1)}
       >
         <Share />
       </Box>
       {/* Site Body END*/}
 
       {/* Site Footer START*/}
-      <Box
-        position="absolute"
-        bottom={theme.spacing(0.5)}
-        height="25px"
-        left="0"
-        right="0"
-      >
+      <Box>
         <Footer />
       </Box>
       {/* Site Footer END*/}
