@@ -19,10 +19,20 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
+interface SelectedGroup {
+  name: string;
+  chat_id: string;
+  channel_name: string;
+}
+
 const AlertForm: React.FC = () => {
   const classes = useStyles();
   const theme = useTheme();
-  const [selectedGroup, setSelectedGroupd] = useState("");
+  const [selectedGroup, setSelectedGroupd] = useState<SelectedGroup>({
+    name: "",
+    chat_id: "",
+    channel_name: "",
+  });
 
   return (
     <Box
