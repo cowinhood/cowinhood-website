@@ -1,3 +1,4 @@
+import { AgeGroup, TelegramAlerts } from "../text";
 import {
   CardActionArea,
   GridList,
@@ -45,8 +46,8 @@ const AlertForm: React.FC = () => {
       borderRadius={8}
     >
       <Box marginBottom={theme.spacing(0.25)}>
-        <Typography variant="h5">Telegram Alerts</Typography>
-        <Typography variant="caption">(Age group: 18-44)</Typography>
+        <Typography variant="h5">{TelegramAlerts}</Typography>
+        <Typography variant="caption">{AgeGroup}</Typography>
       </Box>
       <Box>
         <form
