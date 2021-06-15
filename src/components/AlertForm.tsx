@@ -28,11 +28,9 @@ interface SelectedGroup {
 const AlertForm: React.FC = () => {
   const classes = useStyles();
   const theme = useTheme();
-  const [selectedGroup, setSelectedGroupd] = useState<SelectedGroup>({
-    name: "",
-    chat_id: "",
-    channel_name: "",
-  });
+  const [selectedGroup, setSelectedGroupd] = useState<SelectedGroup>(
+    data.telegram_bots[0]
+  );
 
   return (
     <Box
@@ -70,6 +68,7 @@ const AlertForm: React.FC = () => {
                   setSelectedGroupd(val);
                 }
               }}
+              value={selectedGroup}
             />
           </Box>
           <Button

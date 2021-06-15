@@ -1,14 +1,14 @@
 {
   "telegram_bots": [
     {
-      "name": "All Metros",
-      "chat_id": "cowinhood_metros",
-      "channel_name": "CowinHood U45 Metros"
-    },
-    {
       "name": "Bengaluru",
       "chat_id": "cowinhood_blr_u45",
       "channel_name": "CowinHood U45 Bengaluru"
+    },
+    {
+      "name": "All Metros",
+      "chat_id": "cowinhood_metros",
+      "channel_name": "CowinHood U45 Metros"
     },
     {
       "name": "Hyderabad",
