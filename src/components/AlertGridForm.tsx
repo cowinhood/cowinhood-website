@@ -1,12 +1,16 @@
+import { AgeGroup, TelegramAlerts } from "../text";
+import {
+  CardActionArea,
+  GridList,
+  GridListTile,
+  Theme,
+} from "@material-ui/core";
 import React, { useState } from "react";
 import { createStyles, useTheme } from "@material-ui/core/styles";
 
-import Autocomplete from "@material-ui/lab/Autocomplete";
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import TelegramIcon from "@material-ui/icons/Telegram";
-import TextField from "@material-ui/core/TextField";
-import { Theme } from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
 import data from "../data";
 import { makeStyles } from "@material-ui/core/styles";
@@ -28,7 +32,7 @@ interface SelectedGroup {
 const AlertForm: React.FC = () => {
   const classes = useStyles();
   const theme = useTheme();
-  const [selectedGroup, setSelectedGroupd] = useState<SelectedGroup>(data[0]);
+  const [selectedGroup, setSelectedGroup] = useState<SelectedGroup>(data[0]);
 
   return (
     <Box
@@ -38,12 +42,12 @@ const AlertForm: React.FC = () => {
       flexDirection="column"
       boxShadow={theme.shadows[1]}
       bgcolor={theme.palette.primary.contrastText}
-      padding={theme.spacing(1.5)}
+      padding={theme.spacing(0.5)}
       borderRadius={8}
     >
       <Box marginBottom={theme.spacing(0.25)}>
-        <Typography variant="h5">Telegram Alerts</Typography>
-        <Typography variant="caption">(18-44)</Typography>
+        <Typography variant="h5">{TelegramAlerts}</Typography>
+        <Typography variant="caption">{AgeGroup}</Typography>
       </Box>
       <Box>
         <form
@@ -52,23 +56,29 @@ const AlertForm: React.FC = () => {
             window.open(`https://t.me/${selectedGroup.chat_id}`, "_blank"); //to open new page
           }}
         >
-          <Box marginBottom={theme.spacing(0.25)}>
-            <Autocomplete
-              id="search-cities"
-              options={data}
-              getOptionLabel={(option) => option.name}
-              style={{ width: 300 }}
-              renderInput={(params) => (
-                <TextField {...params} label="City" variant="outlined" />
-              )}
-              onChange={(_, val) => {
-                if (!!val && !!val.channel_name) {
-                  setSelectedGroupd(val);
-                }
-              }}
-              value={selectedGroup}
-            />
-          </Box>
+          <GridList cellHeight={80} cols={4}>
+            {data.map(({ chat_id, channel_name, name, icon }) => (
+              <GridListTile key={chat_id} cols={1}>
+                <CardActionArea
+                  onClick={() =>
+                    setSelectedGroup({ name, channel_name, chat_id })
+                  }
+                >
+                  <Box
+                    display="flex"
+                    flexDirection="column"
+                    justifyContent="center"
+                    alignItems="center"
+                    borderRadius={theme.shape.borderRadius}
+                  >
+                    <img src={icon} height="45px" alt={name} />
+                    <Typography variant="caption">{name}</Typography>
+                  </Box>
+                </CardActionArea>
+              </GridListTile>
+            ))}
+          </GridList>
+          <Box marginBottom={theme.spacing(0.25)}></Box>
           <Button
             variant="contained"
             color="secondary"

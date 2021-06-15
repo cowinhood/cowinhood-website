@@ -3,9 +3,9 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import Link from "@material-ui/core/Link";
 import React from "react";
 import TwitterIcon from "@material-ui/icons/Twitter";
-import { useTheme } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-
+import { twitterLink } from "../constants";
+import { useTheme } from "@material-ui/core/styles";
 const Footer: React.FC = () => {
   const theme = useTheme();
 
@@ -23,18 +23,15 @@ const Footer: React.FC = () => {
       </Box>
       {" | "}
       <Box marginRight={theme.spacing(0.1)} marginLeft={theme.spacing(0.1)}>
-        <Link
-          href="https://twitter.com/cowinhood"
-          color="inherit"
-          target="_blank"
-          rel="noopener"
-        >
+        <Link href={twitterLink} color="inherit" target="_blank" rel="noopener">
           <TwitterIcon />
         </Link>
       </Box>
       {" | "}
       <Box marginLeft={theme.spacing(0.1)}>
-      <Typography variant="caption">cowinhood.org {new Date().getFullYear()}</Typography>
+        <Typography variant="caption">
+          cowinhood.org {new Date().getFullYear()}
+        </Typography>
       </Box>
     </Box>
   );
