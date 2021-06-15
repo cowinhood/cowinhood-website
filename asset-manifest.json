@@ -1,23 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.ba734125.chunk.css",
-    "main.js": "/static/js/main.ed396339.chunk.js",
-    "main.js.map": "/static/js/main.ed396339.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.77482678.js",
-    "runtime-main.js.map": "/static/js/runtime-main.77482678.js.map",
-    "static/js/2.b60e6d54.chunk.js": "/static/js/2.b60e6d54.chunk.js",
-    "static/js/2.b60e6d54.chunk.js.map": "/static/js/2.b60e6d54.chunk.js.map",
-    "static/js/3.44474381.chunk.js": "/static/js/3.44474381.chunk.js",
-    "static/js/3.44474381.chunk.js.map": "/static/js/3.44474381.chunk.js.map",
+    "main.css": "/static/css/main.30518e99.chunk.css",
+    "main.js": "/static/js/main.3406345b.chunk.js",
+    "main.js.map": "/static/js/main.3406345b.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.cdcac416.js",
+    "runtime-main.js.map": "/static/js/runtime-main.cdcac416.js.map",
+    "static/js/2.5706beda.chunk.js": "/static/js/2.5706beda.chunk.js",
+    "static/js/2.5706beda.chunk.js.map": "/static/js/2.5706beda.chunk.js.map",
+    "static/js/3.bebea064.chunk.js": "/static/js/3.bebea064.chunk.js",
+    "static/js/3.bebea064.chunk.js.map": "/static/js/3.bebea064.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.ba734125.chunk.css.map": "/static/css/main.ba734125.chunk.css.map",
-    "static/js/2.b60e6d54.chunk.js.LICENSE.txt": "/static/js/2.b60e6d54.chunk.js.LICENSE.txt",
-    "static/media/logo.c0e127e1.png": "/static/media/logo.c0e127e1.png"
+    "static/css/main.30518e99.chunk.css.map": "/static/css/main.30518e99.chunk.css.map",
+    "static/js/2.5706beda.chunk.js.LICENSE.txt": "/static/js/2.5706beda.chunk.js.LICENSE.txt",
+    "static/media/assembly.335d1bc0.svg": "/static/media/assembly.335d1bc0.svg",
+    "static/media/bara.67eaa72e.svg": "/static/media/bara.67eaa72e.svg",
+    "static/media/charminar.3b6db342.svg": "/static/media/charminar.3b6db342.svg",
+    "static/media/chennai.e39c27c6.svg": "/static/media/chennai.e39c27c6.svg",
+    "static/media/demo3.2be192e2.gif": "/static/media/demo3.2be192e2.gif",
+    "static/media/gatewayofindia.8cc070e4.svg": "/static/media/gatewayofindia.8cc070e4.svg",
+    "static/media/hawamahal.b2937ecd.svg": "/static/media/hawamahal.b2937ecd.svg",
+    "static/media/jhultaminar.55fbd048.svg": "/static/media/jhultaminar.55fbd048.svg",
+    "static/media/kerala.d4fdab0a.svg": "/static/media/kerala.d4fdab0a.svg",
+    "static/media/logo.c0e127e1.png": "/static/media/logo.c0e127e1.png",
+    "static/media/tajmahal.b997563b.svg": "/static/media/tajmahal.b997563b.svg",
+    "static/media/victoria.e72ff6a4.svg": "/static/media/victoria.e72ff6a4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.77482678.js",
-    "static/js/2.b60e6d54.chunk.js",
-    "static/css/main.ba734125.chunk.css",
-    "static/js/main.ed396339.chunk.js"
+    "static/js/runtime-main.cdcac416.js",
+    "static/js/2.5706beda.chunk.js",
+    "static/css/main.30518e99.chunk.css",
+    "static/js/main.3406345b.chunk.js"
   ]
 }
