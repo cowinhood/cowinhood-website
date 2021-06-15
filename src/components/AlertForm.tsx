@@ -43,7 +43,7 @@ const AlertForm: React.FC = () => {
         <form
           onSubmit={(event) => {
             event.preventDefault();
-            window.open(`https://t.me/${selectedGroup}`, "_blank"); //to open new page
+            window.open(`https://t.me/${selectedGroup.chat_id}`, "_blank"); //to open new page
           }}
         >
           <Box marginBottom={theme.spacing(0.25)}>
@@ -56,8 +56,8 @@ const AlertForm: React.FC = () => {
                 <TextField {...params} label="City" variant="outlined" />
               )}
               onChange={(_, val) => {
-                if (!!val && !!val.chat_id) {
-                  setSelectedGroupd(val.chat_id);
+                if (!!val && !!val.channel_name) {
+                  setSelectedGroupd(val);
                 }
               }}
             />
@@ -67,10 +67,10 @@ const AlertForm: React.FC = () => {
             color="secondary"
             className={classes.button}
             startIcon={<TelegramIcon />}
-            disabled={!selectedGroup}
+            disabled={!selectedGroup.channel_name}
             type="submit"
           >
-            Join {selectedGroup}
+            Join {selectedGroup.channel_name}
           </Button>
         </form>
       </Box>

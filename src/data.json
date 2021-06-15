@@ -2,23 +2,53 @@
   "telegram_bots": [
     {
       "name": "All Metros",
-      "chat_id": "cowinhood_metros"
+      "chat_id": "cowinhood_metros",
+      "channel_name": "CowinHood U45 Metros"
     },
     {
       "name": "Bengaluru",
-      "chat_id": "cowinhood_blr_u45"
+      "chat_id": "cowinhood_blr_u45",
+      "channel_name": "CowinHood U45 Bengaluru"
     },
     {
       "name": "Hyderabad",
-      "chat_id": "cowinhood_hyd_u45"
+      "chat_id": "cowinhood_hyd_u45",
+      "channel_name": "CowinHood U45 Hyderabad"
     },
     {
       "name": "Gurugram",
-      "chat_id": "cowinhood_ggn_u45"
+      "chat_id": "cowinhood_ggn_u45",
+      "channel_name": "CowinHood U45 Gurgaon"
     },
     {
       "name": "Mumbai",
-      "chat_id": "cowinhood_mum_u45"
+      "chat_id": "cowinhood_mum_u45",
+      "channel_name": "CowinHood U45 Mumbai"
+    },
+    {
+      "name": "Delhi",
+      "chat_id": "cowinhood_del_u45",
+      "channel_name": "CowinHood U45 Delhi"
+    },
+    {
+      "name": "Chennai",
+      "chat_id": "cowinhood_maa_u45",
+      "channel_name": "CowinHood U45 Chennai"
+    },
+    {
+      "name": "Kolkatta",
+      "chat_id": "cowinhood_kol_u45",
+      "channel_name": "CowinHood U45 Kolkatta"
+    },
+    {
+      "name": "Ahmedabad",
+      "chat_id": "cowinhood_amd_u45",
+      "channel_name": "CowinHood U45 Ahmedabad"
+    },
+    {
+      "name": "Ernakulam (Kochi)",
+      "chat_id": "cowinhood_ernk_u45",
+      "channel_name": "CowinHood U45 Ernakulam"
     }
   ]
 }
